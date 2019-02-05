@@ -32,7 +32,8 @@ $oXML = new SimpleXMLElement( $responseData );
 $i = 0;
 foreach ($oXML->Record->EDUCATION as $item) 
 {
-   echo $oXML->Record->EDUCATION[$i]->SCHOOL;
+   //echo $oXML->Record->EDUCATION[$i]->SCHOOL;
+   echo $item[$i];
    $i++;
 } 
 echo 'Total:' .  $i;
